@@ -245,32 +245,5 @@ section {
 	</section>
 	<!-- end intro-->
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script>
-	$(".randomizer > li").hide();
-	randomItem();
-
-	$("button.primey").click(function() {
-		var lastItems = $(".randomizer > li:visible");
-		randomItem();
-		lastItems.hide();
-	});
-
-	function randomItem() {
-		for (var i = 0; i < 1; i++) {
-			var length = $(".randomizer > li:not(:visible)").length;
-			var random = Math.floor(Math.random() * length);
-			$(".randomizer > li:not(:visible)").eq(random).show();
-		}
-	} 
-      
-      $(function () {
-    $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 10 ) {
-            $('.navbar').addClass('active');
-        } else {
-            $('.navbar').removeClass('active');
-        }
-    });
-});
-	</script>
+	
 </div>
